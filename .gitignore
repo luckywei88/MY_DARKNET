@@ -7,7 +7,7 @@
 *.pyc
 *.so
 *.weights
-#.a
+*.a
 old/
 mnist/
 data/
