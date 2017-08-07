@@ -1,4 +1,5 @@
 *.o
+*.a
 *.dSYM
 *.csv
 *.out
@@ -7,7 +8,6 @@
 *.pyc
 *.so
 *.weights
-*.a
 old/
 mnist/
 data/
