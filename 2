@@ -66,21 +66,20 @@ endif
 
 EXECOBJ = $(addprefix $(OBJDIR), $(EXECOBJA))
 OBJS = $(addprefix $(OBJDIR), $(OBJ))
-#DEPS = $(wildcard src/*.h) Makefile include/darknet.h
-DEPS = $(wildcard src/*.h) include/darknet.h
+DEPS = $(wildcard src/*.h) Makefile include/darknet.h
 
 #all: obj backup results $(SLIB) $(ALIB) $(EXEC)
-all:	obj results $(SLIB) $(ALIB) $(EXEC)
+all: obj  results $(SLIB) $(ALIB) $(EXEC)
+	@echo "*****************"
 	@echo $(EXECOBJ)
+	@echo "*****************"
 	@echo $(OBJS)
+	@echo "*****************"
 	@echo $(DEPS)
-	@echo $(SLIB)
-	@echo $(ALIB)
-	@echo $(EXEC)
 
 
-$(EXEC): $(EXECOBJ) $(ALIB)
-	$(CC) $(COMMON) $(CFLAGS) $^ -o $@ $(LDFLAGS) $(ALIB)
+$(EXEC): $(EXECOBJ) $(SLIB)
+	$(CC) $(COMMON) $(CFLAGS) $^ -o $@ $(LDFLAGS) $(SLIB)
 
 $(ALIB): $(OBJS)
 	$(AR) $(ARFLAGS) $@ $^
