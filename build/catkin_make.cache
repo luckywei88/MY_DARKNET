@@ -1,2 +1,0 @@
-
--DCATKIN_DEVEL_PREFIX=/home/lucky/MyLib/darknet/devel -DCMAKE_INSTALL_PREFIX=/home/lucky/MyLib/darknet/install -G Unix Makefiles

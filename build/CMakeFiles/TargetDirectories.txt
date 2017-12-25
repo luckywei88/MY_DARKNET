@@ -1,7 +1,0 @@
-/home/lucky/MyLib/darknet/build/CMakeFiles/clean_test_results.dir
-/home/lucky/MyLib/darknet/build/CMakeFiles/download_extra_data.dir
-/home/lucky/MyLib/darknet/build/CMakeFiles/doxygen.dir
-/home/lucky/MyLib/darknet/build/gtest/CMakeFiles/gtest.dir
-/home/lucky/MyLib/darknet/build/gtest/CMakeFiles/gtest_main.dir
-/home/lucky/MyLib/darknet/build/CMakeFiles/run_tests.dir
-/home/lucky/MyLib/darknet/build/CMakeFiles/tests.dir
