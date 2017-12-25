@@ -20,6 +20,7 @@ decaf/
 submission/
 darknet
 .fuse*
+.catkin_workspace
 
 # OS Generated #
 .DS_Store*

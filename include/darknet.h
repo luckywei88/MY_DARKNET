@@ -748,4 +748,8 @@ extern int gpu_index;
 	int *read_intlist(char *s, int *n, int d);
 	size_t rand_size_t();
 	float rand_normal();
+
+	float get_pixel(image m, int x, int y, int c);
+	void draw_label(image a, int r, int c, image label, const float *rgb);
+	image get_label(image **characters, char *string, int size);
 #endif
