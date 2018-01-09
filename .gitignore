@@ -1,12 +1,24 @@
 *.o
+<<<<<<< HEAD
+=======
+*.a
+>>>>>>> 10d437734a3fd319f32666c9651af1dc220e1918
 *.dSYM
 *.csv
 *.out
 *.png
 *.jpg
 *.pyc
+<<<<<<< HEAD
 old/
 mnist/
+=======
+*.so
+*.weights
+old/
+mnist/
+data/
+>>>>>>> 10d437734a3fd319f32666c9651af1dc220e1918
 caffe/
 grasp/
 images/
@@ -16,6 +28,11 @@ decaf/
 submission/
 darknet
 .fuse*
+<<<<<<< HEAD
+=======
+.catkin_workspace
+tag
+>>>>>>> 10d437734a3fd319f32666c9651af1dc220e1918
 
 # OS Generated #
 .DS_Store*
@@ -23,3 +40,8 @@ ehthumbs.db
 Icon?
 Thumbs.db
 *.swp
+<<<<<<< HEAD
+=======
+tag
+build/
+>>>>>>> 10d437734a3fd319f32666c9651af1dc220e1918
