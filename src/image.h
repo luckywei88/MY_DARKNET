@@ -62,5 +62,7 @@ void copy_image_into(image src, image dest);
 
 image get_image_layer(image m, int l);
 
+
+float get_pixel(image m, int x, int y, int c);
 #endif
 
