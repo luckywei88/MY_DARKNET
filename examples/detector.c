@@ -570,6 +570,8 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
 
     image **alphabet = load_alphabet();
     network *net = load_network(cfgfile, weightfile, 0);
+	printf("cfgfile %s\n",cfgfile);
+printf("weightfile %s\n",weightfile);
     set_batch_network(net, 1);
     srand(2222222);
     double time;
@@ -594,7 +596,8 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
         //image sized = crop_image(sized2, -((net->w - sized2.w)/2), -((net->h - sized2.h)/2), net->w, net->h);
         //resize_network(net, sized.w, sized.h);
         layer l = net->layers[net->n-1];
-
+	int total=l.w*l.h*l.n;
+	printf("total %d\n",total);
         box *boxes = calloc(l.w*l.h*l.n, sizeof(box));
         float **probs = calloc(l.w*l.h*l.n, sizeof(float *));
         for(j = 0; j < l.w*l.h*l.n; ++j) probs[j] = calloc(l.classes + 1, sizeof(float *));

@@ -764,6 +764,7 @@ network *parse_network_cfg(char *filename)
         net->workspace = calloc(1, workspace_size);
 #endif
     }
+    layer l=net->layers[net->n-1];
     return net;
 }
 
