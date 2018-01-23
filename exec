@@ -1,2 +1,3 @@
 #!/bin/bash
-./darknet detect cfg/tiny-yolo.cfg tiny-yolo.weights data/dog.jpg
+./darknet detect cfg/tiny-yolo.cfg tiny-yolo.weights $1
+mv predictions.png $1.png
